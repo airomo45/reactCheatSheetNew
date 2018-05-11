@@ -1,0 +1,29 @@
+var objectTest = [
+      {
+        name: 'Sam',
+        email: 'somewhere@gmail.com'
+      },
+
+      {
+        name: 'Ash',
+        email: 'something@gmail.com'
+      }
+    ];
+
+
+
+
+<View>
+                {
+                  objectTest.map((anObjectMapped, index) => {
+                    return (
+                      <View key={`${anObjectMapped.name}_{anObjectMapped.email}`}>
+                        <Text>
+                          {anObjectMapped.name} - {anObjectMapped.email}
+                        </Text>
+                      </View>
+                    )
+                  })}
+                  
+                  
+</View>
